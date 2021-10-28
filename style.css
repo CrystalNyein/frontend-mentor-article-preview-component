@@ -1,8 +1,11 @@
+body {
+  position: relative;
+}
 .share-container {
   height: 30px;
   width: 50px;
   background-color: wheat;
-  position: relative;
+  position: absolute;
 }
 .tip {
   display: block;
