@@ -1,9 +1,14 @@
 .share-container {
   height: 30px;
   width: 50px;
+  background-color: wheat;
+  position: relative;
 }
 .tip {
   display: block;
+  position: absolute;
+  top: 30px;
+  left: 24.5px;
   width: 1px;
   height: 20px;
   border-left: 30px solid #fff;
