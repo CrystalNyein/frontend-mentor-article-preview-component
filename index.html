@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      integrity="sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" type="text/javascript"></script>
     <title>Frontend Mentor | Article preview component</title>
@@ -43,10 +49,12 @@
           <div class="card-social">
             <div class="card-profile">
               <img src="./images/avatar-michelle.jpg" alt="Michelle" />
-              <p id="name">Michelle Appleton</p>
-              <p id="date">28 Jun 2020 Share</p>
+              <div class="card-profile-text">
+                <p id="name">Michelle Appleton</p>
+                <p id="date">28 Jun 2020</p>
+              </div>
             </div>
-            <img src="./images/icon-share.svg" alt="Share" onclick="" />
+            <i id="share-icon" class="fas fa-share"></i>
           </div>
         </div>
       </div>
