@@ -28,11 +28,14 @@ body {
   max-width: 90vw;
   background-color: #fff;
   display: flex;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 50px hsl(210, 30%, 89%);
 }
 .card > img {
   width: 40%;
   object-fit: cover;
   object-position: left top;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 .card-text {
   padding: 3rem;
