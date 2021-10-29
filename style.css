@@ -28,14 +28,14 @@ body {
   max-width: 90vw;
   background-color: #fff;
   display: flex;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   box-shadow: 1px 1px 50px hsl(210, 30%, 89%);
 }
 .card > img {
   width: 40%;
   object-fit: cover;
   object-position: left top;
-  border-radius: 0.3rem 0 0 0.3rem;
+  border-radius: 1rem 0 0 1rem;
 }
 .card-text {
   padding: 3rem;
@@ -44,17 +44,19 @@ body {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
+  color: var(--very-dark-grayish-blue);
 }
 .card-text > p {
   color: var(--desaturated-dark-blue);
   font-size: 1.1rem;
   line-height: 1.8rem;
-  margin-bottom: 2rem;
+  margin: 0;
 }
 .card-social {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 .card-profile {
   display: flex;
@@ -99,11 +101,11 @@ body {
   width: 17rem;
   height: 2rem;
   border-radius: 0.5rem;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 3rem;
   background-color: var(--very-dark-grayish-blue);
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 1px 1px 20px hsl(210, 16%, 81%);
 }
@@ -116,6 +118,7 @@ body {
 .share-container .social {
   font-size: 2rem;
   color: var(--light-grayish-blue);
+  padding: 0 0 0 1.6rem;
 }
 .share-container .social:hover {
   color: hsl(209, 49%, 89%);
@@ -124,10 +127,62 @@ body {
   display: block;
   position: absolute;
   top: 4.4rem;
-  left: 10rem;
+  left: calc(10rem + 5px);
   width: 1px;
   height: 25px;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 15px solid var(--very-dark-grayish-blue);
+}
+@media only screen and (max-width: 960px) {
+  body {
+    display: unset;
+    margin: 0;
+  }
+  .main-container {
+    margin-top: 2rem;
+  }
+  .card {
+    width: 35rem;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .card-radius {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card > img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: contain;
+  }
+  .card-text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .share-container {
+    position: unset;
+    margin: 0 auto;
+    padding: 1.8rem 3rem;
+    width: 29rem;
+    max-width: 90vw;
+    border-radius: 0 0 1rem 1rem;
+  }
+  .display-mobile-none {
+    display: none;
+  }
+  #share-icon2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--very-dark-grayish-blue);
+    background-color: hsla(210, 46%, 95%, 80%);
+  }
+  #share-icon2:hover {
+    background-color: var(--light-grayish-blue);
+  }
+}
+@media only screen and (min-width: 961px) {
+  .display-desktop-none {
+    display: none;
+  }
 }
